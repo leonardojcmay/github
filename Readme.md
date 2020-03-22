@@ -1,3 +1,3 @@
 Github
 
-Repositório teste
+Repositório teste.
