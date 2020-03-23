@@ -65,6 +65,11 @@ Adicionando o arquivo que foi criado manualmente ao Git, após isso o Git já ir
 git add Readme.md
 ```
 
+Adicionando todos arquivos:
+```
+git add .
+```
+
 Comando para commitar:
 ```
 git commit -m "Add Readme.md"
@@ -162,3 +167,53 @@ git push -u origin master
 ```
 
 add > commit > push
+
+**Clonando repositório**:
+<br>Copiar link do repósitorio e rodar o comando:
+```
+git clone linkRepositorio
+```
+
+**O que é fork**: você pega um projeto que não é seu e faz uma cópia para você. Exemplo: quando contém algum repositório que esta faltando alguma modificação, documentação, código... e você quer contribuir. É utilizado quando você quer alterar um repositório de outro usuário.
+Ao clicar no botão fork, terá que direcionar para uma organização.
+
+**O que é um branch**: é um ponteiro móvel que leva a um commit.
+
+**Vantangens**: poder modificar sem alterar o local principal(master), facilmente "desligável", múltiplas pessoas trabalhando, evita conflitos.
+
+**Criando um branch**:
+```
+git checkout -b teste
+```
+
+Mostrar todos os branchs que o repositório contém:
+```
+git branch
+```
+
+Acessando outro branch:
+```
+git checkout master
+```
+
+Apagar um branch:
+```
+git branch -D teste
+```
+
+**O que é merge**: une os branchs. Cria um commit novo para juntar as diferenças.
+<br>Vantagem: operação não destrutiva.
+<br>Desvantagem: commit extra, histórico poluído.
+
+```
+git merge nomeDoBranch
+
+```
+
+**O que é rebase**: une os branchs. Joga as diferenças para o início da fila.
+<br>Vantagem: evita commits extras, histórico linear
+<br>Desvantagem: perde ordem cronológica
+
+```
+git rebase nomeDoBranch
+```
