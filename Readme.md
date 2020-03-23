@@ -221,3 +221,56 @@ git merge nomeDoBranch
 ```
 git rebase nomeDoBranch
 ```
+
+**.gitignore**: é um arquivo no repositório que dentro deste arquivo você descreve informações que não quer utilizar. É possivel informar todos arquivos com padrão de extensão e também informar somente o único arquivo que não deseja utilizar.
+<br>Documentação: https://git-scm.com/docs/gitignore
+<br>Templates: https://github.com/github/gitignore
+
+**Git stash**: responsável por guardar modificações que ainda não foram commitadas.
+```
+git stash
+```
+
+***Aplicar***:
+```
+git stash apply
+```
+
+***Listar***:
+```
+git stash list
+```
+
+***Limpar***:
+```
+git stash clear
+```
+
+**Utilizando alias**:
+<br>Exemplo:
+```
+git status
+
+git config --global alias.nomeAtalho status
+
+git nomeAtalho
+```
+
+**Versionamento com Tags**:
+```
+git tag -a 1.0.0 -m "Readme finalizado"
+
+git push origin master --tags
+```
+
+**Git Revert**: pega o hash do commit que esta errado. Ele apaga as informações que foram feitas erradas, mas mantém tudo no histórico dos commits.
+```
+git revert 67da256d22f7046ac7455dfad1ba0f921d6ed286
+```
+
+**Apagando tags e branches remotos**:
+```
+git push origin : nomeTagParaApagar
+
+git push origin : nomeBrachParaApagar
+```
