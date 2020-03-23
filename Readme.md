@@ -205,6 +205,8 @@ git branch -D teste
 <br>Vantagem: operação não destrutiva.
 <br>Desvantagem: commit extra, histórico poluído.
 
+![merge](https://raw.githubusercontent.com/leonardojcmay/github/master/img/merge.JPG)
+
 ```
 git merge nomeDoBranch
 
@@ -213,6 +215,8 @@ git merge nomeDoBranch
 **O que é rebase**: une os branchs. Joga as diferenças para o início da fila.
 <br>Vantagem: evita commits extras, histórico linear
 <br>Desvantagem: perde ordem cronológica
+
+![rebase](https://raw.githubusercontent.com/leonardojcmay/github/master/img/rebase.JPG)
 
 ```
 git rebase nomeDoBranch
